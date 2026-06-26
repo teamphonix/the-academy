@@ -25,6 +25,29 @@ export default function About() {
         </motion.div>
       </section>
 
+      {/* The Problem Section */}
+      <section className="py-12 md:py-16 px-6 md:px-12 border-b border-neutral-800 bg-neutral-950/40">
+        <div className="max-w-[100rem] mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mx-auto space-y-6"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-wider">
+              The Problem
+            </h2>
+            <p className="text-sm md:text-base text-neutral-350 leading-relaxed">
+              At-risk youth receiving crucial assistance and support face a sudden cliff when they age out of services at 18 to 21. Overnight, they lose access to the resources, mentorship, and support systems they depend on.
+            </p>
+            <p className="text-lg md:text-2xl font-black text-primary uppercase tracking-wide pt-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+              "We pick up the ball where they get dropped off."
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Philosophy Section */}
       <section className="py-12 md:py-16 px-6 md:px-12 border-b border-neutral-800">
         <div className="max-w-[100rem] mx-auto">
@@ -98,44 +121,13 @@ export default function About() {
       {/* Our Mission Section */}
       <section className="py-12 md:py-16 px-6 md:px-12 bg-neutral-950/85 border-b border-neutral-800">
         <div className="max-w-[100rem] mx-auto">
-          <div className="text-center mb-8">
+          <div className="text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-wider mb-3">
               Our Mission
             </h2>
             <p className="text-sm md:text-base text-neutral-400 max-w-3xl mx-auto leading-relaxed">
               To equip transition-age young adults with the continuous resources and support needed after aging out of assistance programs, fostering growth within creative spaces with staff and guidance that align with their personal goals.
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { image: "/mission-excellence.png", title: "Excellence", desc: "Highest standards in program delivery" },
-              { image: "/mission-safety.png", title: "Safety", desc: "Safe, inclusive spaces for growth" },
-              { image: "/mission-impact.png", title: "Impact", desc: "Real, tangible outcomes" },
-            ].map((mission, idx) => (
-              <motion.div
-                key={idx}
-                className="bg-neutral-900 border border-primary/20 rounded-lg overflow-hidden flex flex-col shadow-xl group hover:border-primary/50 transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-              >
-                <div className="relative w-full h-[140px] overflow-hidden bg-neutral-950">
-                  <img
-                    src={mission.image}
-                    alt={mission.title}
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6 flex-grow flex flex-col justify-center">
-                  <h3 className="font-bold text-lg text-white uppercase tracking-wide mb-2">
-                    {mission.title}
-                  </h3>
-                  <p className="text-sm text-neutral-400 leading-relaxed">{mission.desc}</p>
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>

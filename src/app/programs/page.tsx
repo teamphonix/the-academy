@@ -96,7 +96,6 @@ export default function Programs() {
               {programsData.map((prog, idx) => {
                 const rectImg = mobileRectangleImages[prog.programUrlSlug] || prog.programImage;
                 const desc = shortDescriptions[prog.programUrlSlug] || prog.shortDescription;
-                const isFirst = idx === 0;
 
                 return (
                   <div key={prog._id} className="space-y-6">
@@ -107,20 +106,6 @@ export default function Programs() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.6 }}
                     >
-                      {/* Graphics shown on first item */}
-                      {isFirst && (
-                        <Link
-                          href={`/programs/${prog.programUrlSlug}`}
-                          className="block w-full max-w-sm mx-auto mb-8 overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
-                        >
-                          <img
-                            src="https://static.wixstatic.com/media/ba59cd_486602662ac04b9fbd43874deca56a61~mv2.jpeg"
-                            alt="Creative Confidence Graphic"
-                            className="w-full h-auto object-cover"
-                          />
-                        </Link>
-                      )}
-
                       {rectImg && (
                         <Link
                           href={`/programs/${prog.programUrlSlug}`}
@@ -155,23 +140,6 @@ export default function Programs() {
                         </Link>
                       </div>
                     </motion.div>
-
-                    {/* Divider graphic */}
-                    {isFirst && (
-                      <motion.div
-                        className="w-full max-w-sm mx-auto my-12 overflow-hidden rounded-lg opacity-85"
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                      >
-                        <img
-                          src="https://static.wixstatic.com/media/ba59cd_bc02c651fca1412cbda992cb55a8b82b~mv2.png"
-                          alt="Ownership & AI Visual Divider"
-                          className="w-full h-auto object-cover"
-                        />
-                      </motion.div>
-                    )}
                   </div>
                 );
               })}
