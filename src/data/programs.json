@@ -1,0 +1,53 @@
+[
+  {
+    "targetAudience": "Individuals seeking personal development, spiritual well-being, and stress reduction.",
+    "fullDescription": "The Inner Light Project is designed to guide participants through practices of mindfulness, meditation, and self-reflection. This program helps individuals connect with their authentic selves, reduce stress, and build a strong foundation for personal growth and emotional well-being. Through workshops, guided exercises, and community support, participants will learn techniques to navigate life's challenges with greater clarity and resilience.",
+    "_id": "745b2687-8d14-4aaf-b367-f2967b3be252",
+    "_owner": "ba59cdaa-d5d3-47bc-8704-4380a0cd2107",
+    "_createdDate": {
+      "$date": "2026-01-23T14:56:38.463Z"
+    },
+    "shortDescription": "A transformative journey focused on self-discovery, mindfulness, and cultivating inner peace.",
+    "_updatedDate": {
+      "$date": "2026-01-23T17:10:29.435Z"
+    },
+    "programName": "The Inner Light Project",
+    "programUrlSlug": "the-inner-light-project",
+    "programImage": "https://static.wixstatic.com/media/ba59cd_6115496567bc4c52a18ded12caf6156c~mv2.jpeg",
+    "desktopimage": "wix:image://v1/ba59cd_e43c085cc81c4d86a794dd31aeac7d17~mv2.jpeg/IMG_2186.jpeg#originWidth=2752&originHeight=1536"
+  },
+  {
+    "targetAudience": "Aspiring entrepreneurs, small business owners, and professionals looking to start or scale their ventures.",
+    "fullDescription": "Boss Up Bootcamp provides comprehensive training in essential business skills, including strategic planning, marketing, financial management, and leadership. Participants will gain practical tools and insights to launch, grow, and sustain their businesses. The program features expert-led sessions, hands-on projects, and networking opportunities to foster a supportive entrepreneurial ecosystem.",
+    "_id": "a0c00399-7b8d-42ad-9e04-fb00dfccc01f",
+    "_owner": "ba59cdaa-d5d3-47bc-8704-4380a0cd2107",
+    "_createdDate": {
+      "$date": "2026-01-23T14:56:38.462Z"
+    },
+    "shortDescription": "An intensive training program for aspiring entrepreneurs and small business owners to elevate their ventures.",
+    "_updatedDate": {
+      "$date": "2026-01-23T17:11:55.157Z"
+    },
+    "programName": "Boss Up Bootcamp",
+    "programUrlSlug": "boss-up-bootcamp",
+    "programImage": "https://static.wixstatic.com/media/ba59cd_9465aacb20574245936dcd5bd0d85d7d~mv2.jpeg",
+    "desktopimage": "wix:image://v1/ba59cd_a18ccb624fb14ac1b154f2c8a99e78aa~mv2.png/Ownership%20&%20AI%20Landing%20Backdrop.png#originWidth=2752&originHeight=1536"
+  },
+  {
+    "targetAudience": "Individuals in recovery from addiction, their families, and support networks.",
+    "fullDescription": "We Do Recover offers a holistic approach to addiction recovery, providing a safe space for individuals to heal and rebuild their lives. The program includes peer support groups, educational workshops on coping mechanisms and relapse prevention, and resources for mental health and wellness. Our goal is to empower participants with the tools and community necessary for long-term sobriety and a fulfilling life.",
+    "_id": "c7930804-cd32-4b26-bf2c-0fe610990ecc",
+    "_owner": "ba59cdaa-d5d3-47bc-8704-4380a0cd2107",
+    "_createdDate": {
+      "$date": "2026-01-23T14:56:38.461Z"
+    },
+    "shortDescription": "A compassionate and supportive program for individuals on their journey to recovery from addiction.",
+    "_updatedDate": {
+      "$date": "2026-01-23T17:12:04.244Z"
+    },
+    "programName": "We Do Recover",
+    "programUrlSlug": "we-do-recover",
+    "programImage": "https://static.wixstatic.com/media/ba59cd_83b2be5ef49e4931a69b526faca96c74~mv2.jpeg",
+    "desktopimage": "wix:image://v1/ba59cd_27d06aa53d3642b7b3b2ea79065fedbc~mv2.png/Recovery%20Support%20Landing%20Backdrop.png#originWidth=2752&originHeight=1536"
+  }
+]

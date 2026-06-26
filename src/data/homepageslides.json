@@ -1,0 +1,50 @@
+[
+  {
+    "slideDescription": "Discover how we transform pain into purpose, guiding young adults aged 18-25 towards a brighter future.",
+    "_id": "09552b3b-e1de-4d9e-b40f-b1dede4945c4",
+    "_owner": "ba59cdaa-d5d3-47bc-8704-4380a0cd2107",
+    "_createdDate": {
+      "$date": "2026-01-07T19:41:52.583Z"
+    },
+    "_updatedDate": {
+      "$date": "2026-01-07T19:41:52.583Z"
+    },
+    "slideImage": "https://static.wixstatic.com/media/ba59cd_64106240ed3047678703bcc7711686c9~mv2.png?originWidth=640&originHeight=640",
+    "callToActionUrl": "/about",
+    "callToActionText": "Learn Our Philosophy",
+    "slideTitle": "Harmony Through Hip Hop",
+    "displayOrder": 1.0
+  },
+  {
+    "slideDescription": "Our 'Inner Light Project' fosters self-discovery and resilience, helping you unlock your true potential.",
+    "_id": "e637e7e0-4752-4c27-a7bf-fea06d779ca5",
+    "_owner": "ba59cdaa-d5d3-47bc-8704-4380a0cd2107",
+    "_createdDate": {
+      "$date": "2026-01-07T19:41:52.582Z"
+    },
+    "_updatedDate": {
+      "$date": "2026-01-07T19:41:52.582Z"
+    },
+    "slideImage": "https://static.wixstatic.com/media/ba59cd_16cdc74b40fe46c38e2f84ecdc925abb~mv2.png?originWidth=640&originHeight=640",
+    "callToActionUrl": "/programs",
+    "callToActionText": "Explore Programs",
+    "slideTitle": "Empower Your Inner Light",
+    "displayOrder": 2.0
+  },
+  {
+    "slideDescription": "Partner with us to support young adults in their journey of growth and transformation.",
+    "_id": "6b24cc81-3cc0-4e38-bab8-1154a675b6e0",
+    "_owner": "ba59cdaa-d5d3-47bc-8704-4380a0cd2107",
+    "_createdDate": {
+      "$date": "2026-01-07T19:41:52.581Z"
+    },
+    "_updatedDate": {
+      "$date": "2026-01-07T19:41:52.581Z"
+    },
+    "slideImage": "https://static.wixstatic.com/media/ba59cd_5f9fba4cec5c444da2ee4dea02202181~mv2.png?originWidth=640&originHeight=640",
+    "callToActionUrl": "/partner-with-us",
+    "callToActionText": "Partner With Us",
+    "slideTitle": "Join Our Movement",
+    "displayOrder": 3.0
+  }
+]
