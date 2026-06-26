@@ -71,10 +71,10 @@ export default function Footer() {
                 <div>
                   <p className="text-xs text-neutral-500">Email</p>
                   <a
-                    href="mailto:info@hiphopacademy.org"
+                    href="mailto:Jonti@HipHopAcademyNJ.Org"
                     className="text-sm text-neutral-300 hover:text-primary transition-colors"
                   >
-                    info@hiphopacademy.org
+                    Jonti@HipHopAcademyNJ.Org
                   </a>
                 </div>
               </div>
@@ -83,10 +83,10 @@ export default function Footer() {
                 <div>
                   <p className="text-xs text-neutral-500">Phone</p>
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+12014526570"
                     className="text-sm text-neutral-300 hover:text-primary transition-colors"
                   >
-                    (555) 123-4567
+                    (201) 452-6570
                   </a>
                 </div>
               </div>
