@@ -11,7 +11,7 @@ export default function Partner() {
     <div className="min-h-screen bg-transparent text-neutral-100 flex flex-col">
       <Header />
 
-      {/* Hero Banner with text overlay */}
+      {/* Hero Banner with no overlay text */}
       <section className="w-full border-b border-neutral-800 relative h-[220px] md:h-[320px] overflow-hidden flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0 }}
@@ -24,28 +24,8 @@ export default function Partner() {
             alt="Partner with us"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-neutral-950/40" />
+          <div className="absolute inset-0 bg-neutral-950/20" />
         </motion.div>
-        
-        {/* Dynamic overlay text */}
-        <div className="relative z-10 px-6 text-center max-w-4xl mx-auto">
-          <motion.h1 
-            className="text-3xl md:text-5xl font-black text-white uppercase tracking-wider mb-3 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            Partner With Us
-          </motion.h1>
-          <motion.p 
-            className="text-xs md:text-base text-neutral-200 font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] max-w-2xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-          >
-            Join us in transforming lives. Together, we can create lasting change for young adults in our communities.
-          </motion.p>
-        </div>
       </section>
 
       {/* Philosophy section */}
@@ -55,13 +35,13 @@ export default function Partner() {
             <h2 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-wide mb-3">
               Why Partner With Us
             </h2>
-            <p className="text-sm md:text-base text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-              Building infrastructure, opportunity, and long term impact together
+            <p className="text-sm md:text-base text-neutral-350 max-w-3xl mx-auto leading-relaxed">
+              At The H.I.P.H.O.P. Academy, we believe in bridging the gap between talent and professional environments. We collaborate with partners to create structured access to high-quality facilities where young adults can develop stability, creativity, and career skills.
             </p>
-            <p className="text-sm md:text-base text-neutral-300 max-w-3xl mx-auto mt-4 leading-relaxed">
-              The H.I.P.H.O.P. Academy partners with organizations, facilities, and community leaders who understand that meaningful change requires structure, trust, and shared responsibility. We do not operate in isolation. We build systems that strengthen the work already happening on the ground.
+            <p className="text-sm md:text-base text-neutral-350 max-w-3xl mx-auto mt-4 leading-relaxed">
+              So if you operate a fully functioning production space for music and entertainment, or have a multimedia room or resource that would benefit our clients, we want to partner with you!
             </p>
-            <p className="text-xl md:text-2xl text-primary font-bold text-center max-w-3xl mx-auto mt-8 uppercase tracking-wide">
+            <p className="text-xl md:text-2xl text-primary font-black text-center max-w-3xl mx-auto mt-8 uppercase tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
               "We don't fix lives. We create space for people to rebuild their own."
             </p>
           </div>
