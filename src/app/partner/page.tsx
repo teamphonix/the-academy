@@ -24,7 +24,6 @@ export default function Partner() {
             alt="Partner with us"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-neutral-950/20" />
         </motion.div>
       </section>
 
