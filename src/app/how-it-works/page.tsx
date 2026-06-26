@@ -36,13 +36,13 @@ export default function HowItWorks() {
             </h2>
             <div className="space-y-4 max-w-3xl mx-auto text-neutral-300 text-sm md:text-base leading-relaxed">
               <p>
-                The H.I.P.H.O.P. Academy exists to support individuals in transition by providing structure, creative opportunity, and real world exposure inside professional environments. Our work is grounded in lived experience, accountability, and consistency, not shortcuts or hype.
+                The H.I.P.H.O.P. Academy bridges the support gap for young adults aging out of assistance programs. By providing dedicated creative spaces, peer resources, and staff aligned with their personal goals, we create a clear path to self-sufficiency.
               </p>
               <p>
-                We believe real change happens when people are given clear expectations, meaningful responsibility, and access to environments where growth is modeled daily. Hip Hop is more than music here. It is a framework for discipline, expression, ownership, and rebuilding identity.
+                We believe lasting growth comes through structure, clear expectations, and real-world responsibility. Hip Hop serves as our framework for building discipline, communication, and ownership.
               </p>
               <p>
-                Our programs are designed to meet people where they are while holding standards that prepare them for stability, independence, and long term success.
+                Our model prepares participants to navigate life transitions with stability, accountability, and long-term success.
               </p>
             </div>
           </div>
