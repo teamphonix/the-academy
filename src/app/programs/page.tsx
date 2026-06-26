@@ -61,9 +61,9 @@ export default function Programs() {
   };
 
   const shortDescriptions: Record<string, string> = {
-    "the-inner-light-project": "Studio-based development that builds identity, expression, and professional discipline.",
-    "we-do-recover": "Peer support, accountability, and creative expression to protect stability.",
-    "boss-up-bootcamp": "Entrepreneurship, business planning, and modern tools to Boss Up and work for yourself.",
+    "the-inner-light-project": "An active recording studio pathway where participants step behind the microphone and console. Under professional guidance, you will learn to write meaningful lyrics, produce music, and channel life experiences into professional-grade creative projects.",
+    "we-do-recover": "A safe space dedicated to long-term sobriety. Through structured peer groups, relapse prevention coaching, and constructive creative outlets, participants gain the community support and tools needed to keep moving forward.",
+    "boss-up-bootcamp": "A practical roadmap to self-employment. Learn to turn creative ideas into viable business models, master modern digital tools, and build the entrepreneurial foundations needed to build a sustainable career.",
   };
 
   return (
