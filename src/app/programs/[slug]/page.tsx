@@ -186,30 +186,11 @@ export default function ProgramDetail() {
 
               {bodyImage && (
                 <div className="relative overflow-hidden rounded-lg border border-neutral-850 shadow-2xl">
-                  {program.programUrlSlug === "we-do-recover" ? (
-                    <div className="relative w-full h-[240px] md:h-[400px] flex items-center justify-center text-center px-4 overflow-hidden">
-                      <img
-                        src={bodyImage}
-                        alt={program.programName}
-                        className="absolute inset-0 w-full h-full object-cover scale-110 blur-[1px] brightness-50"
-                      />
-                      <div className="absolute inset-0 bg-neutral-950/40" />
-                      <div className="relative z-10 space-y-2 max-w-lg mx-auto">
-                        <h3 className="text-xl md:text-3xl font-black text-white uppercase tracking-wider drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                          Recovery Support
-                        </h3>
-                        <p className="text-xs md:text-sm text-neutral-200 font-semibold drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] leading-relaxed">
-                          Peer support, accountability, and creative expression to protect stability.
-                        </p>
-                      </div>
-                    </div>
-                  ) : (
-                    <img
-                      src={bodyImage}
-                      alt={program.programName}
-                      className="w-full h-[300px] md:h-[400px] object-cover"
-                    />
-                  )}
+                  <img
+                    src={bodyImage}
+                    alt={program.programName}
+                    className="w-full h-[300px] md:h-[400px] object-cover"
+                  />
                 </div>
               )}
 

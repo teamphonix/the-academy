@@ -57,7 +57,7 @@ export default function Programs() {
   const mobileRectangleImages: Record<string, string> = {
     "boss-up-bootcamp": "https://static.wixstatic.com/media/ba59cd_17970a7da22c43428eee0fa577ec695a~mv2.jpeg",
     "the-inner-light-project": "https://static.wixstatic.com/media/ba59cd_c134349b28654d68b7774f11943315df~mv2.jpeg",
-    "we-do-recover": "https://static.wixstatic.com/media/ba59cd_e9596142496f8bed9a2f5854dd85a~mv2.jpeg",
+    "we-do-recover": "https://static.wixstatic.com/media/ba59cd_83b2be5ef49e4931a69b526faca96c74~mv2.jpeg",
   };
 
   const shortDescriptions: Record<string, string> = {
