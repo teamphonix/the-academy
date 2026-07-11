@@ -110,12 +110,12 @@ export default function Footer() {
               © {new Date().getFullYear()} The H.I.P.H.O.P. Academy. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-primary transition-colors">
+              <Link href="/privacy-policy" className="hover:text-primary transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="hover:text-primary transition-colors">
-                Terms of Service
-              </a>
+              </Link>
+              <Link href="/terms-of-use" className="hover:text-primary transition-colors">
+                Terms of Use
+              </Link>
             </div>
           </div>
         </div>
