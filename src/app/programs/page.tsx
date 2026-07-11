@@ -56,7 +56,7 @@ export default function Programs() {
   // Rectangle images for mobile view (original landscape ones)
   const mobileRectangleImages: Record<string, string> = {
     "boss-up-bootcamp": "https://static.wixstatic.com/media/ba59cd_17970a7da22c43428eee0fa577ec695a~mv2.jpeg",
-    "the-inner-light-project": "https://static.wixstatic.com/media/ba59cd_6115496567bc4c52a18ded12caf6156c~mv2.jpeg",
+    "the-inner-light-project": "/inner-light-studio.png",
     "we-do-recover": "https://static.wixstatic.com/media/ba59cd_83b2be5ef49e4931a69b526faca96c74~mv2.jpeg",
   };
 
@@ -109,13 +109,20 @@ export default function Programs() {
                       {rectImg && (
                         <Link
                           href={`/programs/${prog.programUrlSlug}`}
-                          className="block w-full max-w-md mx-auto mb-8 overflow-hidden rounded-lg border border-neutral-850 hover:border-primary/50 transition-colors group shadow-lg"
+                          className="block w-full max-w-md mx-auto mb-8 overflow-hidden rounded-lg border border-neutral-850 hover:border-primary/50 transition-colors group shadow-lg relative"
                         >
                           <img
                             src={rectImg}
                             alt={prog.programName || "Program"}
                             className="w-full h-auto object-cover group-hover:scale-101 transition-transform"
                           />
+                          {prog.programUrlSlug === "the-inner-light-project" && (
+                            <div className="absolute inset-0 bg-black/60 flex items-center justify-center p-4">
+                              <p className="text-white text-center text-sm font-medium leading-snug">
+                                Creative Confidence<br/>studio based development that builds identity, expression, and professional discipline
+                              </p>
+                            </div>
+                          )}
                         </Link>
                       )}
 
