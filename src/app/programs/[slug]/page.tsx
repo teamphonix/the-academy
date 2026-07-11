@@ -100,6 +100,8 @@ export default function ProgramDetail() {
     : program.programImage;
   const bodyImage = program.programUrlSlug === "the-inner-light-project"
     ? "/inner-light-studio.png"
+    : program.programUrlSlug === "boss-up-bootcamp"
+    ? "/boss-up-office.png"
     : formatWixImage(program.desktopimage) || program.programImage;
 
   return (
@@ -200,6 +202,16 @@ export default function ProgramDetail() {
                       </h4>
                       <p className="text-xs md:text-sm text-neutral-350 leading-relaxed font-medium">
                         studio based development that builds identity, expression, and professional discipline
+                      </p>
+                    </div>
+                  )}
+                  {program.programUrlSlug === "boss-up-bootcamp" && (
+                    <div className="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-xs py-5 px-6 flex flex-col justify-center border-t border-white/10">
+                      <h4 className="text-xl md:text-2xl font-black text-white uppercase tracking-wider mb-1.5">
+                        Ownership & AI
+                      </h4>
+                      <p className="text-xs md:text-sm text-neutral-350 leading-relaxed font-medium">
+                        Entrepreneurship, business planning, and modern tools to Boss Up and work for yourself
                       </p>
                     </div>
                   )}
