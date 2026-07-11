@@ -117,7 +117,7 @@ export default function ProgramDetail() {
           <div className="absolute inset-0 bg-neutral-950/40" />
           
           {/* Overlay text dynamically */}
-          {(program.programUrlSlug === "we-do-recover" || program.programUrlSlug === "boss-up-bootcamp") && (
+          {(program.programUrlSlug === "we-do-recover" || program.programUrlSlug === "the-inner-light-project" || program.programUrlSlug === "boss-up-bootcamp") && (
             <div className="relative z-10 px-6 text-center max-w-4xl mx-auto flex flex-col items-center justify-center h-full">
               <motion.h1 
                 className="text-3xl md:text-5xl font-black text-white uppercase tracking-wider mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
