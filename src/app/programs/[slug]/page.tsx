@@ -102,6 +102,8 @@ export default function ProgramDetail() {
     ? "/inner-light-studio.png"
     : program.programUrlSlug === "boss-up-bootcamp"
     ? "/boss-up-office.png"
+    : program.programUrlSlug === "we-do-recover"
+    ? "/we-do-recover-support.png"
     : formatWixImage(program.desktopimage) || program.programImage;
 
   return (
@@ -212,6 +214,16 @@ export default function ProgramDetail() {
                       </h4>
                       <p className="text-xs md:text-sm text-neutral-350 leading-relaxed font-medium">
                         Entrepreneurship, business planning, and modern tools to Boss Up and work for yourself
+                      </p>
+                    </div>
+                  )}
+                  {program.programUrlSlug === "we-do-recover" && (
+                    <div className="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-xs py-5 px-6 flex flex-col justify-center border-t border-white/10">
+                      <h4 className="text-xl md:text-2xl font-black text-white uppercase tracking-wider mb-1.5">
+                        Recovery Support
+                      </h4>
+                      <p className="text-xs md:text-sm text-neutral-350 leading-relaxed font-medium">
+                        Peer support, accountability, and creative expression to protect stability.
                       </p>
                     </div>
                   )}
