@@ -56,7 +56,7 @@ export default function Programs() {
   // Rectangle images for mobile view (original landscape ones)
   const mobileRectangleImages: Record<string, string> = {
     "boss-up-bootcamp": "https://static.wixstatic.com/media/ba59cd_17970a7da22c43428eee0fa577ec695a~mv2.jpeg",
-    "the-inner-light-project": "https://static.wixstatic.com/media/ba59cd_6115496567bc4c52a18ded12caf6156c~mv2.jpeg",
+    "the-inner-light-project": "https://static.wixstatic.com/media/ba59cd_c134349b28654d68b7774f11943315df~mv2.jpeg",
     "we-do-recover": "https://static.wixstatic.com/media/ba59cd_83b2be5ef49e4931a69b526faca96c74~mv2.jpeg",
   };
 
