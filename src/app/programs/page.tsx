@@ -117,9 +117,12 @@ export default function Programs() {
                             className="w-full h-auto object-cover group-hover:scale-101 transition-transform"
                           />
                           {prog.programUrlSlug === "the-inner-light-project" && (
-                            <div className="absolute inset-0 bg-black/60 flex items-center justify-center p-4">
-                              <p className="text-white text-center text-sm font-medium leading-snug">
-                                Creative Confidence<br/>studio based development that builds identity, expression, and professional discipline
+                            <div className="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-xs py-3 px-4 flex flex-col justify-center border-t border-white/10">
+                              <p className="text-white text-center text-xs font-black uppercase tracking-wider mb-0.5">
+                                Creative Confidence
+                              </p>
+                              <p className="text-neutral-300 text-center text-[10px] leading-tight font-medium">
+                                studio based development that builds identity, expression, and professional discipline
                               </p>
                             </div>
                           )}

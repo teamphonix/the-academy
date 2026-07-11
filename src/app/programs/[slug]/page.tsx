@@ -98,7 +98,9 @@ export default function ProgramDetail() {
     : program.programUrlSlug === "we-do-recover"
     ? "/we-do-recover-banner.png"
     : program.programImage;
-  const bodyImage = formatWixImage(program.desktopimage) || program.programImage;
+  const bodyImage = program.programUrlSlug === "the-inner-light-project"
+    ? "/inner-light-studio.png"
+    : formatWixImage(program.desktopimage) || program.programImage;
 
   return (
     <div className="min-h-screen bg-transparent text-neutral-100 flex flex-col">
@@ -115,7 +117,7 @@ export default function ProgramDetail() {
           <div className="absolute inset-0 bg-neutral-950/40" />
           
           {/* Overlay text dynamically */}
-          {(program.programUrlSlug === "we-do-recover" || program.programUrlSlug === "the-inner-light-project" || program.programUrlSlug === "boss-up-bootcamp") && (
+          {(program.programUrlSlug === "we-do-recover" || program.programUrlSlug === "boss-up-bootcamp") && (
             <div className="relative z-10 px-6 text-center max-w-4xl mx-auto flex flex-col items-center justify-center h-full">
               <motion.h1 
                 className="text-3xl md:text-5xl font-black text-white uppercase tracking-wider mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
@@ -185,12 +187,22 @@ export default function ProgramDetail() {
               </div>
 
               {bodyImage && (
-                <div className="relative overflow-hidden rounded-lg border border-neutral-850 shadow-2xl">
+                <div className="relative overflow-hidden rounded-lg border border-neutral-850 shadow-2xl h-[350px] md:h-[450px]">
                   <img
                     src={bodyImage}
                     alt={program.programName}
-                    className="w-full h-[300px] md:h-[400px] object-cover"
+                    className="w-full h-full object-cover"
                   />
+                  {program.programUrlSlug === "the-inner-light-project" && (
+                    <div className="absolute inset-x-0 bottom-0 bg-black/80 backdrop-blur-xs py-5 px-6 flex flex-col justify-center border-t border-white/10">
+                      <h4 className="text-xl md:text-2xl font-black text-white uppercase tracking-wider mb-1.5">
+                        Creative Confidence
+                      </h4>
+                      <p className="text-xs md:text-sm text-neutral-350 leading-relaxed font-medium">
+                        studio based development that builds identity, expression, and professional discipline
+                      </p>
+                    </div>
+                  )}
                 </div>
               )}
 
