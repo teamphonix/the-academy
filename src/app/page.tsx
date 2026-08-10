@@ -317,19 +317,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partner With Us CTA Banner (Text overlay removed, now displays raw image containing baked-in text) */}
-      <section className="py-12 md:py-16 px-6 md:px-12 border-b border-neutral-800">
-        <div className="max-w-[100rem] mx-auto">
-          <Link
-            href="/partner"
-            className="block relative overflow-hidden rounded-lg border border-neutral-850 group shadow-2xl"
-          >
-            <img
-              src="https://static.wixstatic.com/media/ba59cd_a1b3681066124e068ad6fbeb31acaeab~mv2.jpeg"
-              alt="Partner With Us"
-              className="w-full h-auto object-cover group-hover:opacity-90 transition-opacity"
-            />
-          </Link>
+      {/* Partner With Us CTA Section */}
+      <section className="py-16 md:py-20 px-6 md:px-12 border-b border-neutral-800 bg-neutral-950/40">
+        <div className="max-w-4xl mx-auto">
+          <div className="relative overflow-hidden rounded-xl border border-neutral-800 bg-neutral-900/80 p-8 md:p-12 shadow-2xl flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            {/* Left side: Background graphic / preview */}
+            <div className="w-full md:w-1/3 aspect-[4/3] relative rounded-lg overflow-hidden border border-neutral-800">
+              <img
+                src="/partner-banner.png"
+                alt="Partner With Us"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/30 to-transparent" />
+            </div>
+
+            {/* Right side: Text and CTA Button */}
+            <div className="w-full md:w-2/3 flex flex-col items-start text-left">
+              <h2 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-wider mb-3">
+                Partner With Us
+              </h2>
+              <p className="text-sm md:text-base text-neutral-300 leading-relaxed mb-6">
+                Support programs, sponsor build-out, provide space or services, and help young adults transition into independence.
+              </p>
+              <Link
+                href="/partner"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-6 py-2.5 rounded text-sm hover:bg-primary-hover transition-all shadow-lg shadow-primary/20"
+              >
+                Become a Partner
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
