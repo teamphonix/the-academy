@@ -11,7 +11,7 @@ export default function Partner() {
     <div className="min-h-screen bg-transparent text-neutral-100 flex flex-col">
       <Header />
 
-      {/* Hero Banner with no overlay text */}
+      {/* Hero Banner Section */}
       <section className="w-full border-b border-neutral-800 relative h-[220px] md:h-[320px] overflow-hidden flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0 }}
@@ -20,11 +20,32 @@ export default function Partner() {
           className="absolute inset-0"
         >
           <img
-            src="https://static.wixstatic.com/media/ba59cd_a93ebdffd9af48398e7add98a0b005cc~mv2.jpeg"
+            src="/partner-banner.png"
             alt="Partner with us"
             className="w-full h-full object-cover"
           />
         </motion.div>
+        <div className="absolute inset-0 bg-neutral-950/40" />
+
+        {/* Overlay text dynamically */}
+        <div className="relative z-10 px-6 text-center max-w-4xl mx-auto flex flex-col items-center justify-center h-full">
+          <motion.h1 
+            className="text-3xl md:text-5xl font-black text-white uppercase tracking-wider mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Partner With Us
+          </motion.h1>
+          <motion.p 
+            className="text-xs md:text-base text-neutral-200 font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] max-w-2xl text-center leading-relaxed"
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+          >
+            Collaborate with us to build creative spaces, resources, and career pathways.
+          </motion.p>
+        </div>
       </section>
 
       {/* Philosophy section */}

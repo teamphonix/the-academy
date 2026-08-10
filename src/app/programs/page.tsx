@@ -70,21 +70,40 @@ export default function Programs() {
     <div className="min-h-screen bg-transparent text-neutral-100 flex flex-col">
       <Header />
 
-      {/* Hero Banner Section (No dark overlay) */}
-      <section className="w-full border-b border-neutral-800">
-        <div className="relative w-full h-[200px] md:h-[300px]">
+      {/* Hero Banner Section */}
+      <section className="w-full border-b border-neutral-800 relative h-[200px] md:h-[300px] overflow-hidden flex items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="absolute inset-0 w-full h-full"
+        >
           <img
-            src="https://static.wixstatic.com/media/ba59cd_e7631867d0aa42cc87acf7385cff522b~mv2.jpeg"
+            src="/programs-banner.png"
             alt="Our Programs Banner"
             className="w-full h-full object-cover"
           />
-        </div>
-        
-        {/* Title set below the image */}
-        <div className="py-8 px-6 md:px-12 max-w-[100rem] mx-auto text-center border-b border-neutral-800 bg-neutral-950/20">
-          <p className="text-sm md:text-base text-neutral-200 max-w-xl mx-auto leading-relaxed">
-            Structured pathways that empower young adults to discover purpose, build stability, and gain real-world credentials.
-          </p>
+        </motion.div>
+        <div className="absolute inset-0 bg-neutral-950/40" />
+
+        {/* Overlay text dynamically */}
+        <div className="relative z-10 px-6 text-center max-w-4xl mx-auto flex flex-col items-center justify-center h-full">
+          <motion.h1 
+            className="text-3xl md:text-5xl font-black text-white uppercase tracking-wider mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Our Programs
+          </motion.h1>
+          <motion.p 
+            className="text-xs md:text-base text-neutral-200 font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] max-w-2xl text-center leading-relaxed"
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+          >
+            Structured pathways empowering youths transitioning out of assistance programs to reclaim their future.
+          </motion.p>
         </div>
       </section>
 
