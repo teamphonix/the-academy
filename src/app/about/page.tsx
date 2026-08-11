@@ -167,17 +167,17 @@ export default function About() {
               </ul>
             </div>
 
-            {/* Team card */}
+            {/* Support model card */}
             <div className="bg-neutral-950 border border-primary/20 rounded-lg p-6 md:p-8 shadow">
               <h3 className="text-lg md:text-xl font-bold text-white uppercase tracking-wide mb-4">
-                Our Team
+                Program Support Model
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Licensed mental health counselors",
-                  "Career and life skills coaches",
+                  "Program leadership and facilitators",
+                  "Career and life skills mentors",
                   "Peer mentors with lived experience",
-                  "Community partners and experts",
+                  "Qualified referral partners and subject-matter professionals",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
@@ -187,6 +187,11 @@ export default function About() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-5 text-xs md:text-sm text-neutral-400 leading-relaxed border-t border-neutral-800 pt-4">
+                The Academy provides educational, mentorship, and peer-support
+                programming. It is not a healthcare provider and does not replace
+                licensed medical or mental-health treatment.
+              </p>
             </div>
           </div>
         </div>

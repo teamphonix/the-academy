@@ -125,6 +125,35 @@ export default function Partner() {
         </div>
       </section>
 
+      {/* Impact framework */}
+      <section className="py-12 md:py-16 px-6 md:px-12 border-b border-neutral-800">
+        <div className="max-w-[100rem] mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-wider mb-3">
+              Our Impact Framework
+            </h2>
+            <p className="text-sm md:text-base text-neutral-300 max-w-3xl mx-auto leading-relaxed">
+              As cohorts launch, the Academy intends to report aggregate,
+              privacy-protected results so partners can understand participation,
+              progress, and next steps without overstating early-stage outcomes.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {[
+              "Enrollment and attendance",
+              "Program completion",
+              "Portfolio or project completion",
+              "Participant next-step plans",
+              "30, 60, and 90-day follow-up",
+            ].map((measure) => (
+              <div key={measure} className="bg-neutral-950 border border-neutral-850 rounded-lg p-5 text-center">
+                <p className="text-sm text-neutral-200 leading-relaxed">{measure}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Guidelines Section */}
       <section className="py-12 md:py-16 px-6 md:px-12 border-b border-neutral-800">
         <div className="max-w-[100rem] mx-auto">
