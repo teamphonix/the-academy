@@ -289,7 +289,7 @@ export default function ProgramDetail() {
                   {isBossUpBootcamp ? (
                     <div className="space-y-3">
                     <a
-                      href="https://boss-up-bootcamp.vercel.app/"
+                      href="/boss-up/"
                       className="text-sm bg-primary text-primary-foreground px-6 py-3 rounded hover:bg-primary-hover transition-colors inline-flex items-center justify-center gap-2 w-full font-bold shadow-lg shadow-primary/20"
                     >
                       Visit Boss Up Bootcamp <ArrowRight size={16} />
