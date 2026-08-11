@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, Clock, Send, Check } from "lucide-react";
 import Header from "@/components/Header";
@@ -17,18 +17,37 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  useEffect(() => {
+    const topic = new URLSearchParams(window.location.search).get("topic");
+    if (topic !== "boss-up-scholarship") return;
+
+    setFormData((current) => ({
+      ...current,
+      subject: "Boss Up Bootcamp Scholarship & Academy Membership",
+      message: "I am interested in applying for a Boss Up Bootcamp scholarship. Please share the scholarship qualifications and information about Academy membership.",
+    }));
+  }, []);
+
   const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const onSubmit = async (e: React.FormEvent) => {
+  const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate standard Wix submission behavior (1.5s delay)
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Phone: ${formData.phone || "Not provided"}`,
+      "",
+      formData.message,
+    ].join("\n");
+    const mailto = `mailto:Jonti@HipHopAcademyNJ.Org?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailto;
     setLoading(false);
     setSuccess(true);
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     setTimeout(() => setSuccess(false), 5000);
   };
 
@@ -53,7 +72,7 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Have questions? Ready to get started? We're here to help.
+            Have questions, want to join the Academy, or need scholarship information? We&apos;re here to help.
           </motion.p>
         </div>
       </section>
@@ -216,7 +235,7 @@ export default function Contact() {
                     {loading ? (
                       <>
                         <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                        Sending...
+                        Preparing Email...
                       </>
                     ) : (
                       <>
@@ -231,7 +250,7 @@ export default function Contact() {
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                     >
-                      <Check size={18} /> Message sent successfully!
+                      <Check size={18} /> Email draft ready—send it from your email app.
                     </motion.div>
                   )}
                 </div>
