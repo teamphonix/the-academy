@@ -178,6 +178,47 @@ export default function ProgramDetail() {
       {/* Main Details Section */}
       <section className="py-12 md:py-16 px-6 md:px-12">
         <div className="max-w-[100rem] mx-auto">
+          {isBossUpBootcamp && (
+            <div className="mb-10 overflow-hidden rounded-2xl border border-primary/30 bg-neutral-950 shadow-xl shadow-primary/5">
+              <div className="grid gap-8 p-6 md:p-10 lg:grid-cols-[1.25fr_.75fr] lg:items-center">
+                <div>
+                  <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] text-primary">
+                    Fall Semester
+                  </p>
+                  <h2 className="mb-4 text-3xl font-black uppercase tracking-wide text-white md:text-5xl">
+                    Classes Start This Fall!
+                  </h2>
+                  <p className="max-w-2xl text-sm leading-relaxed text-neutral-300 md:text-base">
+                    A focused four-week course for young adults ready to turn an idea into a clear brand, practical digital assets, and a launch-ready plan using modern AI tools.
+                  </p>
+                  <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                    <a href="/boss-up/" className="inline-flex items-center justify-center gap-2 rounded bg-primary px-6 py-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary-hover">
+                      Visit Boss Up Bootcamp <ArrowRight size={16} />
+                    </a>
+                    <Link href="/contact?topic=boss-up-scholarship" className="inline-flex items-center justify-center gap-2 rounded border border-primary/40 px-6 py-3 text-sm font-bold text-primary transition-colors hover:bg-primary/10">
+                      Apply for a Scholarship <ArrowRight size={16} />
+                    </Link>
+                  </div>
+                </div>
+                <dl className="grid grid-cols-2 overflow-hidden rounded-xl border border-neutral-800 bg-black/30">
+                  {[
+                    ["Length", "4 weeks"],
+                    ["Tuition", "$25/week"],
+                    ["Total", "$100"],
+                    ["Cohort", "20 students"],
+                  ].map(([label, value]) => (
+                    <div key={label} className="border-b border-r border-neutral-800 p-5 last:border-b-0">
+                      <dt className="text-xs font-bold uppercase tracking-wider text-neutral-500">{label}</dt>
+                      <dd className="mt-1 text-lg font-black text-white">{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <div className="border-t border-neutral-800 bg-primary/5 px-6 py-4 text-xs leading-relaxed text-neutral-300 md:px-10 md:text-sm">
+                <strong className="text-white">Scholarships:</strong> Limited scholarships may be awarded to qualified Academy members based on eligibility and available funding. Non-members may pay tuition or contact the Academy to learn how to become a member.
+              </div>
+            </div>
+          )}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
             
             {/* Left Content Column */}
@@ -237,12 +278,19 @@ export default function ProgramDetail() {
                   What You'll Gain
                 </h3>
                 <ul className="space-y-4">
-                  {[
-                    "Personalized support and guidance from experienced mentors",
-                    "Evidence-based tools and strategies for lasting change",
-                    "A supportive community of peers on similar journeys",
-                    "Practical skills you can apply immediately in your life",
-                  ].map((benefit, idx) => (
+                  {(isBossUpBootcamp
+                    ? [
+                        "A clear business concept and practical launch plan",
+                        "Hands-on experience with modern AI and digital creation tools",
+                        "Brand, marketing, and portfolio assets you can continue building",
+                        "Entrepreneurial skills designed for ownership and self-employment",
+                      ]
+                    : [
+                        "Personalized support and guidance from experienced mentors",
+                        "Evidence-based tools and strategies for lasting change",
+                        "A supportive community of peers on similar journeys",
+                        "Practical skills you can apply immediately in your life",
+                      ]).map((benefit, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="text-primary mt-0.5 flex-shrink-0" size={20} />
                       <span className="text-sm md:text-base text-neutral-250 leading-relaxed">
@@ -294,6 +342,9 @@ export default function ProgramDetail() {
                       <Link href="/contact?topic=boss-up-scholarship" className="text-sm border border-primary/40 text-primary px-6 py-3 rounded hover:bg-primary/10 transition-colors inline-flex items-center justify-center gap-2 w-full font-bold">
                         Apply for a Scholarship <ArrowRight size={16} />
                       </Link>
+                      <p className="border-t border-neutral-800 pt-4 text-xs leading-relaxed text-neutral-400">
+                        Scholarships are limited to qualified Academy members and are not guaranteed.
+                      </p>
                     </div>
                   ) : (
                     <Link href="/contact" className="text-sm bg-primary text-primary-foreground px-6 py-3 rounded hover:bg-primary-hover transition-colors inline-flex items-center justify-center gap-2 w-full font-bold shadow-lg shadow-primary/20">
