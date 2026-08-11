@@ -105,6 +105,7 @@ export default function ProgramDetail() {
     : program.programUrlSlug === "we-do-recover"
     ? "/we-do-recover-support.png"
     : formatWixImage(program.desktopimage) || program.programImage;
+  const isBossUpBootcamp = program.programUrlSlug === "boss-up-bootcamp";
 
   return (
     <div className="min-h-screen bg-transparent text-neutral-100 flex flex-col">
@@ -278,17 +279,27 @@ export default function ProgramDetail() {
 
                 <div className="bg-neutral-950 border border-neutral-850 rounded-lg p-6 shadow">
                   <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
-                    Ready to Get Started?
+                    {isBossUpBootcamp ? "Fall Classes Start Soon" : "Ready to Get Started?"}
                   </h3>
                   <p className="text-xs md:text-sm text-neutral-400 mb-6">
-                    Contact us to learn more about enrollment and registration.
+                    {isBossUpBootcamp
+                      ? "Explore the four-week Fall Semester, join the interest list, or inquire about an Academy member scholarship."
+                      : "Contact us to learn more about enrollment and registration."}
                   </p>
-                  <Link
-                    href="/contact"
-                    className="text-sm bg-primary text-primary-foreground px-6 py-3 rounded hover:bg-primary-hover transition-colors inline-flex items-center justify-center gap-2 w-full font-bold shadow-lg shadow-primary/20"
-                  >
-                    Contact Us <ArrowRight size={16} />
-                  </Link>
+                  {isBossUpBootcamp ? (
+                    <div className="space-y-3">
+                      <a href="/boss-up/" className="text-sm bg-primary text-primary-foreground px-6 py-3 rounded hover:bg-primary-hover transition-colors inline-flex items-center justify-center gap-2 w-full font-bold shadow-lg shadow-primary/20">
+                        Visit Boss Up Bootcamp <ArrowRight size={16} />
+                      </a>
+                      <Link href="/contact?topic=boss-up-scholarship" className="text-sm border border-primary/40 text-primary px-6 py-3 rounded hover:bg-primary/10 transition-colors inline-flex items-center justify-center gap-2 w-full font-bold">
+                        Apply for a Scholarship <ArrowRight size={16} />
+                      </Link>
+                    </div>
+                  ) : (
+                    <Link href="/contact" className="text-sm bg-primary text-primary-foreground px-6 py-3 rounded hover:bg-primary-hover transition-colors inline-flex items-center justify-center gap-2 w-full font-bold shadow-lg shadow-primary/20">
+                      Contact Us <ArrowRight size={16} />
+                    </Link>
+                  )}
                 </div>
 
                 <div className="bg-neutral-950 border border-neutral-850 rounded-lg p-6 shadow">
