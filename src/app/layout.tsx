@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Home | The H.I.P.H.O.P. Academy",
-  description: "How I Put Harmony On Pain - Transforming lives of young adults aged 18-25 through education, empowerment, and community support.",
+  description: "How I Put Harmony On Pain - Transforming lives through education, empowerment, and community support.",
   openGraph: {
     title: "The H.I.P.H.O.P. Academy",
     description: "How I Put Harmony On Pain",

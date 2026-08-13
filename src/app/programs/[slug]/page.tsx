@@ -316,15 +316,6 @@ export default function ProgramDetail() {
                   </div>
                 )}
 
-                <div className="bg-neutral-950 border border-primary/20 rounded-lg p-6 shadow-md shadow-primary/5">
-                  <h3 className="text-xs text-primary font-bold uppercase tracking-wider mb-2">
-                    Age Requirement
-                  </h3>
-                  <p className="text-sm md:text-base text-neutral-300 leading-relaxed">
-                    Transition-age young adults only. We do not provide services to minors.
-                  </p>
-                </div>
-
                 <div className="bg-neutral-950 border border-neutral-850 rounded-lg p-6 shadow">
                   <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">
                     {isBossUpBootcamp ? "Fall Classes Start Soon" : "Ready to Get Started?"}

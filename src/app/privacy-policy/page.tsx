@@ -144,7 +144,7 @@ export default function PrivacyPolicy() {
                 Children's Privacy
               </h2>
               <p>
-                The Academy's primary programs are designed for transition-age young adults ages 18 through 25. We do not knowingly collect personal information from children under the age of 13 through our website. If we become aware that such information has been submitted, we will take appropriate steps to remove it.
+                We do not knowingly collect personal information from children under the age of 13 through our website. If we become aware that such information has been submitted, we will take appropriate steps to remove it.
               </p>
 
               <hr className="border-neutral-800" />
