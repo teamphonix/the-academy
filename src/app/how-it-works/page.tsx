@@ -22,7 +22,7 @@ export default function HowItWorks() {
           <img
             src="/how-it-works-banner-v2.png"
             alt="The illuminated 184 entrance and active creative spaces above it"
-            className="w-full h-full object-cover object-[38%_center] md:object-center"
+            className="w-full h-full object-cover object-[38%_center] md:object-[center_26%]"
           />
         </motion.div>
         <div className="absolute inset-0 bg-neutral-950/40" />
