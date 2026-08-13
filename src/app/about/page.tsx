@@ -91,10 +91,10 @@ export default function About() {
                     Hip Hop means more than music. It's How I Put Harmony On Pain.
                   </strong>
                 </p>
-                <p>
+                <p className="text-white">
                   At The H.I.P.H.O.P. Academy, we believe that every individual has the power to transform their struggles into strength, their pain into purpose, and their challenges into opportunities for growth.
                 </p>
-                <p>
+                <p className="text-white">
                   Our approach is grounded in the understanding that true healing and empowerment come from within. We provide the tools, support, and community participants need to discover their inner light, develop essential life skills, and create lasting positive change.
                 </p>
               </div>
