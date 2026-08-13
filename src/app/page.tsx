@@ -176,7 +176,7 @@ export default function Home() {
                 Delivered in professional creative facilities through partnerships, with clear standards that protect people, process, and purpose.
               </p>
               <p className="text-sm md:text-base text-neutral-300 max-w-2xl mx-auto leading-relaxed">
-                Three transformative pathways for transition-age young adults.
+                Three transformative pathways for growth, creativity, and opportunity.
               </p>
             </div>
 

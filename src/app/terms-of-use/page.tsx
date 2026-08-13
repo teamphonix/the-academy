@@ -191,7 +191,7 @@ export default function TermsOfUse() {
               </div>
 
               <p className="text-xs text-neutral-400 pt-6">
-                Thank you for supporting our mission to empower transition-age young adults through creativity, workforce development, mentorship, and recovery-oriented programming.
+                Thank you for supporting our mission to empower young adults through creativity, workforce development, mentorship, and recovery-oriented programming.
               </p>
             </div>
           </motion.div>

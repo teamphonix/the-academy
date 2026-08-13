@@ -95,7 +95,7 @@ export default function About() {
                   At The H.I.P.H.O.P. Academy, we believe that every individual has the power to transform their struggles into strength, their pain into purpose, and their challenges into opportunities for growth.
                 </p>
                 <p>
-                  Our approach is grounded in the understanding that true healing and empowerment come from within. We provide the tools, support, and community that transition-age young adults need to discover their inner light, develop essential life skills, and create lasting positive change.
+                  Our approach is grounded in the understanding that true healing and empowerment come from within. We provide the tools, support, and community participants need to discover their inner light, develop essential life skills, and create lasting positive change.
                 </p>
               </div>
             </motion.div>
@@ -147,7 +147,7 @@ export default function About() {
               Our Mission
             </h2>
             <p className="text-sm md:text-base text-neutral-400 max-w-3xl mx-auto leading-relaxed">
-              To equip transition-age young adults with the continuous resources and support needed after aging out of assistance programs, fostering growth within creative spaces with staff and guidance that align with their personal goals.
+              To provide continuous resources and support after participants age out of assistance programs, fostering growth within creative spaces with staff and guidance that align with their personal goals.
             </p>
           </div>
         </div>

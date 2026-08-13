@@ -24,7 +24,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-neutral-400 mb-6 leading-relaxed">
-              Transforming pain into harmony through education, empowerment, and community support for transition-age young adults.
+              Transforming pain into harmony through education, empowerment, and community support.
             </p>
             <div className="bg-primary/5 border border-primary/30 rounded p-4">
               <p className="text-xs text-neutral-300">
