@@ -20,8 +20,8 @@ export default function Partner() {
           className="absolute inset-0"
         >
           <img
-            src="/partner-banner.png"
-            alt="Partner with us"
+            src="/partner-banner-v2.png"
+            alt="An executive recording studio office with an open chair and partnership agreement"
             className="w-full h-full object-cover"
           />
         </motion.div>
